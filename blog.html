@@ -96,28 +96,30 @@
 
 <body>
 
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="https://aasifanwer.github.io/" class="nav__logo">Aasif Anwer</a>
-  
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item"><a href="https://aasifanwer.github.io/#home" class="nav__link">Home</a></li>
-            <li><a href="https://aasifanwer.github.io/blog" class="nav__link active-link">Blog</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-  
-        <div class="nav__btns">
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>  
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="https://aasifanwer.github.io/" class="nav__logo">Aasif Anwer</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item"><a href="https://aasifanwer.github.io/" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="https://aasifanwer.github.io/blog" class="nav__link">Blog</a></li>
+        <li class="nav__item"><a href="#categories" class="nav__link">Categories</a></li>
+        <li class="nav__item"><a href="#latest" class="nav__link">Latest Posts</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <i class="uil uil-times nav__close" id="nav-close"></i>
+    </div>
+
+    <div class="nav__btns">
+      <i class="uil uil-moon change-theme" id="theme-button"></i>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-apps"></i>
+      </div>
+    </div>
+  </nav>
+</header>
 
   <!-- Main Content -->
   <main class="container section">
@@ -187,6 +189,45 @@
     // Initialize
     displayPosts();
   </script>
+
+<!--==================== CATEGORIES ====================-->
+<section class="section" id="categories">
+  <h2 class="section__title">Categories</h2>
+  <span class="section__subtitle">Browse Topics</span>
+  <div class="container grid">
+    <a href="#" class="card">🔍 On-Page SEO</a>
+    <a href="#" class="card">🔗 Off-Page SEO</a>
+    <a href="#" class="card">📈 Technical SEO</a>
+    <a href="#" class="card">📝 Content Strategy</a>
+    <a href="#" class="card">📊 Analytics & Tools</a>
+    <a href="#" class="card">💡 Local SEO</a>
+  </div>
+</section>
+
+  <!--==================== LATEST POSTS ====================-->
+  <section class="section" id="latest">
+    <h2 class="section__title">Latest Posts</h2>
+    <span class="section__subtitle">Fresh insights for 2025</span>
+    <div class="container grid">
+      <article class="card">
+        <h3>Top 10 SEO Trends to Watch in 2025</h3>
+        <p>Stay ahead with these game-changing SEO tactics for the future of search.</p>
+        <a href="#">Read More →</a>
+      </article>
+
+      <article class="card">
+        <h3>Mastering Local SEO: A Complete Guide</h3>
+        <p>Learn how to dominate Google Maps and local search results step-by-step.</p>
+        <a href="#">Read More →</a>
+      </article>
+
+      <article class="card">
+        <h3>Content Clusters: How to Build Topical Authority</h3>
+        <p>Boost rankings by organizing your blog around powerful content silos.</p>
+        <a href="#">Read More →</a>
+      </article>
+    </div>
+  </section>
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
@@ -260,8 +301,8 @@
       </section>
   </main>
   
-  <!--==================== FOOTER ====================-->
-  <footer class="footer" id="footer">
+    <!--==================== FOOTER ====================-->
+    <footer class="footer" id="footer">
       <div class="footer__bg">
           <div class="footer__container container grid">
               <div style="display: flex; flex-direction: column; align-items: center;">
@@ -271,7 +312,11 @@
 
               <ul class="footer__links" style="align-self: center;">
                   <li>
-                      <a href="#articles" class="footer__link">Insights & Articles</a>
+                      <a href="#categories" class="footer__link">Categories</a>
+                  </li>
+
+                  <li>
+                      <a href="#latest" class="footer__link">Latest Posts</a>
                   </li>
 
                   <li>
