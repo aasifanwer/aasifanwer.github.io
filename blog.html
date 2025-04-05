@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Aasif Anwer</title>
+  <meta name="description" content="Read insightful SEO and digital marketing articles by Aasif Anwer. Stay up-to-date with the latest strategies, trends, and tips.">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Aasif Anwer</a>
+      <ul class="nav__list">
+        <li><a href="index.html#home" class="nav__link">Home</a></li>
+        <li><a href="index.html#articles" class="nav__link active-link">Articles</a></li>
+        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container section">
+    <h1 class="section__title">Insights & Articles</h1>
+    <span class="section__subtitle">SEO strategies, digital marketing trends & practical guides</span>
+
+    <div class="blog__container" id="blog-posts-container"></div>
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <!-- Script to handle posts -->
+  <script>
+    const blogPosts = [
+      { title: "SEO for Local Businesses", date: "2024-12-20", excerpt: "Learn how to dominate local search results with tailored local SEO tactics.", url: "posts/seo-local.html" },
+      { title: "Technical SEO Checklist", date: "2024-11-10", excerpt: "A comprehensive list to ensure your technical SEO foundation is solid.", url: "posts/technical-seo.html" },
+      { title: "Voice Search Optimization in 2025", date: "2024-10-05", excerpt: "Voice assistants are changing the way people search. Here's how to keep up.", url: "posts/voice-search.html" },
+      { title: "Schema Markup for Better Rankings", date: "2024-09-15", excerpt: "Using structured data to improve how search engines read your site.", url: "posts/schema-markup.html" },
+      { title: "Keyword Research Tools Compared", date: "2024-08-01", excerpt: "Which tools actually deliver value when it comes to keyword analysis?", url: "posts/keyword-tools.html" },
+      { title: "How to Outrank Your Competitors", date: "2024-07-21", excerpt: "Smart tactics to study your rivals and climb above them in the SERPs.", url: "posts/outrank-competitors.html" },
+      { title: "Google My Business Optimization", date: "2024-06-18", excerpt: "Make your GMB listing shine and rank in local 3-pack results.", url: "posts/gmb-optimization.html" }
+    ];
+
+    const postsPerPage = 3;
+    let currentPage = 1;
+
+    function displayPosts() {
+      const container = document.getElementById("blog-posts-container");
+      container.innerHTML = "";
+
+      const start = (currentPage - 1) * postsPerPage;
+      const end = start + postsPerPage;
+      const paginatedPosts = blogPosts.slice(start, end);
+
+      paginatedPosts.forEach(post => {
+        container.innerHTML += `
+          <div class="blog__card">
+            <h3 class="blog__title"><a href="${post.url}">${post.title}</a></h3>
+            <div class="blog__meta"><i class="uil uil-calendar-alt"></i>${post.date}</div>
+            <p class="blog__excerpt">${post.excerpt}</p>
+            <a href="${post.url}" class="button button--flex">Read More <i class="uil uil-arrow-right button__icon"></i></a>
+          </div>
+        `;
+      });
+
+      renderPagination();
+    }
+
+    function renderPagination() {
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+
+      const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+      for (let i = 1; i <= totalPages; i++) {
+        pagination.innerHTML += `
+          <button onclick="goToPage(${i})" ${i === currentPage ? "disabled" : ""}>${i}</button>
+        `;
+      }
+    }
+
+    function goToPage(page) {
+      currentPage = page;
+      displayPosts();
+    }
+
+    // Initialize
+    displayPosts();
+  </script>
+</body>
+</html>
