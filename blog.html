@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog - Aasif Anwer</title>
   <meta name="description" content="Read insightful SEO and digital marketing articles by Aasif Anwer. Stay up-to-date with the latest strategies, trends, and tips.">
+  <meta name="author" content="Aasif Anwer" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="KYe6GsSYjjdW_70JlJh1PmUMcjtCYCgVxAILWMEkWSw" />
+  
+  <title>Blog - Aasif Anwer</title>
 
   <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -91,17 +95,6 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <!-- <header class="header">
-    <nav class="nav container">
-      <a href="https://aasifanwer.github.io/" class="nav__logo">Aasif Anwer</a>
-      <ul class="nav__list">
-        <li><a href="https://aasifanwer.github.io/" class="nav__link">Home</a></li>
-        <li><a href="https://aasifanwer.github.io/#articles" class="nav__link active-link">Articles</a></li>
-        <li><a href="https://aasifanwer.github.io/.html#contact" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
-  </header> -->
 
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -111,7 +104,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item"><a href="https://aasifanwer.github.io/#home" class="nav__link">Home</a></li>
-            <li><a href="https://aasifanwer.github.io/#articles" class="nav__link active-link">Articles</a></li>
+            <li><a href="https://aasifanwer.github.io/blog" class="nav__link active-link">Blog</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
@@ -128,6 +121,7 @@
 
   <!-- Main Content -->
   <main class="container section">
+
     <h1 class="section__title">Insights & Articles</h1>
     <span class="section__subtitle">SEO strategies, digital marketing trends & practical guides</span>
 
@@ -193,5 +187,130 @@
     // Initialize
     displayPosts();
   </script>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+          <h2 class="section__title">Contact Me</h2>
+          <span class="section__subtitle">Get in touch</span>
+
+          <div class="contact__container container grid">
+              <div>
+                  <div class="contact__information">
+                      <i class="uil uil-telegram-alt contact__icon"></i>
+
+                      <div>
+                          <h3 class="contact__title">Telegram</h3>
+                          <span class="contact__subtitle">@aasifanwer</span>
+                      </div>
+                  </div>
+
+                  <div class="contact__information">
+                      <i class="uil uil-envelope contact__icon"></i>
+
+                      <div>
+                          <h3 class="contact__title">Email</h3>
+                          <span class="contact__subtitle">ashifanwer2@gmail.com</span>
+                      </div>
+                  </div>
+
+                  <div class="contact__information">
+                      <i class="uil uil-map-marker contact__icon"></i>
+
+                      <div>
+                          <h3 class="contact__title">Location</h3>
+                          <span class="contact__subtitle">Noida, India</span>
+                      </div>
+                  </div>
+                      
+                  <form action="https://formspree.io/f/xgegpzvv" method="POST" class="contact__form grid" id="submit_form">
+                      <div class="contact__inputs grid">
+                          <div class="contact__content">
+                              <label for="name" class="contact__label">Name</label>
+                              <input type="text" id="name" name="name" class="contact__input" required>
+                          </div>
+
+                          <div class="contact__content">
+                              <label for="email" class="contact__label" placeholder="email@example.com">Email</label>
+                              <input type="email" id="email" name="email" class="contact__input" required>
+                          </div>
+                      </div>
+
+                      <div class="contact__content">
+                          <label for="project-contact" class="contact__label">Subject</label>
+                          <input type="text" id="project-contact" name="project" class="contact__input" required>
+                      </div>
+
+                      <div class="contact__content">
+                          <label for="message-contact" class="contact__label">Message</label>
+                          <textarea name="message" cols="0" rows="7" id="message-contact"
+                              class="contact__input" required></textarea>
+                      </div>
+
+                      <div class="g-recaptcha" data-sitekey="6LcPSqIqAAAAAMWdYku_a07AkS8hgmLPxffj2MEX"></div>
+
+                      <div style="text-align: center;">
+                          <button class="button button--flex" id="check">
+                              Send Message
+                              <i class="uil uil-message button__icon"></i>
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </section>
+  </main>
+  
+  <!--==================== FOOTER ====================-->
+  <footer class="footer" id="footer">
+      <div class="footer__bg">
+          <div class="footer__container container grid">
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                  <h2 class="footer__title">Aasif Anwer</h2>
+                  <span class="footer__subtitle">SEO Specialist and Digital Marketer</span>
+              </div>
+
+              <ul class="footer__links" style="align-self: center;">
+                  <li>
+                      <a href="#articles" class="footer__link">Insights & Articles</a>
+                  </li>
+
+                  <li>
+                      <a href="#contact" class="footer__link">Contact Me</a>
+                  </li>
+              </ul>
+
+              <div class="footer__socials" style="align-self: center;">
+                  <a href="https://twitter.com/aasifanwer_" class="footer__social" target="_blank">
+                      <i class="uil uil-twitter-alt"></i>
+                  </a>
+
+                  <a href="https://medium.com/@aasifanwer" target="_blank"
+                      class="footer__social">
+                      <i class="uil uil-medium-m"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/aasifanwer/" target="_blank" class="footer__social">
+                      <i class="uil uil-linkedin-alt"></i>
+                  </a>
+              </div>
+          </div>
+
+          <p class="footer__copy" style="margin-top: 10px;">&#169; Aasif Anwer. All rights reserved.</p>
+      </div>
+  </footer>
+
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scroll__icon"></i>
+  </a>
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
