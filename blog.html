@@ -9,20 +9,122 @@
   <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .section__title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section__subtitle {
+      display: block;
+      text-align: center;
+      color: var(--text-color-light);
+      margin-bottom: 2rem;
+    }
+
+    .blog__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .blog__card {
+      background: var(--container-color);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .blog__card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog__title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--title-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .blog__meta {
+      font-size: 0.875rem;
+      color: var(--text-color-light);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .blog__excerpt {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 2rem 0;
+    }
+
+    .pagination button {
+      background: var(--first-color);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .pagination button:disabled {
+      background: var(--first-color-light);
+      cursor: default;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <!-- <header class="header">
     <nav class="nav container">
-      <a href="index.html" class="nav__logo">Aasif Anwer</a>
+      <a href="https://aasifanwer.github.io/" class="nav__logo">Aasif Anwer</a>
       <ul class="nav__list">
-        <li><a href="index.html#home" class="nav__link">Home</a></li>
-        <li><a href="index.html#articles" class="nav__link active-link">Articles</a></li>
-        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        <li><a href="https://aasifanwer.github.io/" class="nav__link">Home</a></li>
+        <li><a href="https://aasifanwer.github.io/#articles" class="nav__link active-link">Articles</a></li>
+        <li><a href="https://aasifanwer.github.io/.html#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="https://aasifanwer.github.io/" class="nav__logo">Aasif Anwer</a>
+  
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item"><a href="https://aasifanwer.github.io/#home" class="nav__link">Home</a></li>
+            <li><a href="https://aasifanwer.github.io/#articles" class="nav__link active-link">Articles</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+  
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>  
 
   <!-- Main Content -->
   <main class="container section">
@@ -36,16 +138,16 @@
   <!-- Script to handle posts -->
   <script>
     const blogPosts = [
-      { title: "SEO for Local Businesses", date: "2024-12-20", excerpt: "Learn how to dominate local search results with tailored local SEO tactics.", url: "posts/seo-local.html" },
-      { title: "Technical SEO Checklist", date: "2024-11-10", excerpt: "A comprehensive list to ensure your technical SEO foundation is solid.", url: "posts/technical-seo.html" },
-      { title: "Voice Search Optimization in 2025", date: "2024-10-05", excerpt: "Voice assistants are changing the way people search. Here's how to keep up.", url: "posts/voice-search.html" },
-      { title: "Schema Markup for Better Rankings", date: "2024-09-15", excerpt: "Using structured data to improve how search engines read your site.", url: "posts/schema-markup.html" },
-      { title: "Keyword Research Tools Compared", date: "2024-08-01", excerpt: "Which tools actually deliver value when it comes to keyword analysis?", url: "posts/keyword-tools.html" },
-      { title: "How to Outrank Your Competitors", date: "2024-07-21", excerpt: "Smart tactics to study your rivals and climb above them in the SERPs.", url: "posts/outrank-competitors.html" },
-      { title: "Google My Business Optimization", date: "2024-06-18", excerpt: "Make your GMB listing shine and rank in local 3-pack results.", url: "posts/gmb-optimization.html" }
+      { title: "SEO for Local Businesses", date: "2024-12-20", excerpt: "Learn how to dominate local search results with tailored local SEO tactics.", url: "#" },
+      { title: "Technical SEO Checklist", date: "2024-11-10", excerpt: "A comprehensive list to ensure your technical SEO foundation is solid.", url: "#" },
+      { title: "Voice Search Optimization in 2025", date: "2024-10-05", excerpt: "Voice assistants are changing the way people search. Here's how to keep up.", url: "#" },
+      { title: "Schema Markup for Better Rankings", date: "2024-09-15", excerpt: "Using structured data to improve how search engines read your site.", url: "#" },
+      { title: "Keyword Research Tools Compared", date: "2024-08-01", excerpt: "Which tools actually deliver value when it comes to keyword analysis?", url: "#" },
+      { title: "How to Outrank Your Competitors", date: "2024-07-21", excerpt: "Smart tactics to study your rivals and climb above them in the SERPs.", url: "#" },
+      { title: "Google My Business Optimization", date: "2024-06-18", excerpt: "Make your GMB listing shine and rank in local 3-pack results.", url: "#" }
     ];
 
-    const postsPerPage = 3;
+    const postsPerPage = 4;
     let currentPage = 1;
 
     function displayPosts() {
