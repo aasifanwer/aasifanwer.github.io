@@ -937,6 +937,59 @@ img{
     margin-left: 0.5rem;
 }
 
+/*==================== NEWSLETTER ====================*/
+.newsletter {
+  padding: 4rem 0 2rem;
+  text-align: center;
+  background-color: var(--body-color);
+}
+
+.newsletter__container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.newsletter__input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  background-color: var(--input-color);
+  color: var(--text-color);
+}
+
+.newsletter__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.newsletter__button i {
+  font-size: 1.25rem;
+}
+
 /*==================== ARTICLES ====================*/
 
 .card-container {
