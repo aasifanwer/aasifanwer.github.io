@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Aasif Anwer</title>
+  <meta name="description" content="Contact Aasif Anwer for SEO consulting, collaborations, or digital marketing inquiries. Let's connect and grow together.">
+  <link rel="canonical" href="https://aasifanwer.github.io/contact.html" />
+  
+  <!-- SEO Meta -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Aasif Anwer">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Aasif Anwer">
+  <meta property="og:description" content="Get in touch with Aasif Anwer – SEO expert and digital marketing consultant.">
+  <meta property="og:url" content="https://aasifanwer.github.io/contact.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact Aasif Anwer">
+  <meta name="twitter:description" content="Reach out for SEO strategy, digital growth, and consulting.">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body {
+      padding: 2rem;
+      background: var(--body-color);
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--container-color);
+      padding: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--title-color);
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      background: #fff;
+      resize: vertical;
+    }
+
+    button {
+      background: var(--first-color);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: var(--first-color-alt);
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <p>Have a project in mind or just want to say hi? Fill out the form below or email me directly at <a href="mailto:hello@aasifanwer.com">hello@aasifanwer.com</a></p>
+
+    <form action="https://formsubmit.co/hello@aasifanwer.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      
+      <!-- Honeypot & thank you redirect -->
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://aasifanwer.github.io/thankyou.html">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
