@@ -757,21 +757,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
+        <!--==================== REQUEST MEETING ====================-->
+        <section class="project section" id="meeting">
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
-                        <h2 class="project__title">> Would you like to get to know me better?
-                            <br>
-                            > You want to collaborate with me?</h2>
-                        <p class="project__description">Contact me now!</p>
-                        <div class="centered-container">
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message project__icon button__icon button__contact"></i>
+                        <h2 class="project__title">Do you have any questions?</h2>
+                        <p class="project__description">Schedule a meeting and lets discuss!</p>
+                        <a href="#meeting" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/erolbicer/onlinemeeting?hide_gdpr_banner=1&text_color=7c716a&primary_color=f9660b'});return false;" class="button button--flex button--white">
+                            Send a Request
+                            <i class="uil uil-message project_icon button__icon"></i>
                         </a>
                     </div>
-                    </div>
+                    <img src="assets/img/perfil.png" alt="Erol Bicer" class="project__img">
                 </div>
             </div>
         </section>
