@@ -157,15 +157,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <!-- Home Data -->
                 <div class="home__data">
-                    <h1 class="home__title">Hello from Aasif Anwer,</h1>
-                    <h3 class="home__subtitle">SEO Specialist and Digital Marketer</h3>
+                    <h1 class="home__title">
+                      Hi!<span class="hand-emoji">👋</span>, I'm Aasif Anwer
+                      <span class="typed-text" id="typed-text"></span>
+                    </h1>
+                    <h3 class="home__subtitle">
+                        and I'm <span class="auto-input"></span>
+                    </h3>
                     <p class="home__description">
-                        Expert in developing and implementing advanced SEO strategies to drive organic traffic, improve search rankings, and achieve long-term success through ethical, white-hat practices.
+                      Expert in developing and implementing advanced SEO strategies to drive organic traffic,
+                      improve search rankings, and achieve long-term success through ethical, white-hat practices.
                     </p>
                     <a href="#contact" class="button button--flex">
-                        Contact Me <i class="uil uil-message button__icon"></i>
+                      Contact Me <i class="uil uil-message button__icon"></i>
                     </a>
-                </div>
+                  </div>
             </div>
 
             <!-- Scroll Down -->
@@ -911,7 +917,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
 
-
+    <!--=================== Animated text ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: [
+                "an SEO Specialist",
+                "an SEO Analyst",
+                "a Digital Marketer",
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>    
+    
     <!--==================== SCROLL TOP ====================-->
     <a href="" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scroll__icon"></i>
