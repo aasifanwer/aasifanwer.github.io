@@ -405,6 +405,31 @@ img{
     color: var(--first-color-alt);
 }
 
+/* ==================== Typing Animation & Emoji ==================== */
+
+.hand-emoji {
+  display: inline-block;
+  animation: wave 1s infinite alternate;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(14deg); }
+  50% { transform: rotate(-8deg); }
+  75% { transform: rotate(14deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.typed-text {
+  display: inline;
+  border-right: 2px solid var(--first-color);
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  color: var(--first-color);
+}
+
 /*==================== ABOUT ====================*/
 .about__img{
     width: 200px;
@@ -832,7 +857,6 @@ img{
     outline: none;
 }
 
-/*==================== CTA SECTION ====================*/
 /*==================== CTA SECTION ====================*/
 .cta {
     padding: 3rem 1rem;
