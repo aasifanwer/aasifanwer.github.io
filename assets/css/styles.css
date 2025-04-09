@@ -864,12 +864,40 @@ img{
 /*==================== CONTACT ME ====================*/
 .contact__container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr; /* wider form */
-    gap: 2rem; /* reduced gap between columns */
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
     align-items: flex-start;
-    padding: 2rem 0; /* optional padding for spacing */
+    padding: 2rem 0;
 }
 
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact__information {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact__icon {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.contact__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+/* Contact Form */
 .contact__form {
     display: flex;
     flex-direction: column;
@@ -903,28 +931,6 @@ img{
     resize: none;
 }
 
-.contact__information {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: var(--mb-2);
-}
-
-.contact__icon {
-    font-size: 2rem;
-    color: var(--first-color);
-    margin-right: var(--mb-0-75);
-}
-
-.contact__title {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-}
-
-.contact__subtitle {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
 .contact__form button {
     display: inline-flex;
     align-items: center;
@@ -935,6 +941,21 @@ img{
 .button__icon {
     font-size: 1.25rem;
     margin-left: 0.5rem;
+}
+
+/* ✅ Responsive (Mobile First) */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__inputs {
+        flex-direction: column;
+    }
+
+    .contact__content {
+        flex: 1 1 100%;
+    }
 }
 
 /*==================== NEWSLETTER ====================*/
