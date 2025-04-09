@@ -833,6 +833,7 @@ img{
 }
 
 /*==================== CTA SECTION ====================*/
+/*==================== CTA SECTION ====================*/
 .cta {
     padding: 3rem 1rem;
     background-color: #ffffff;
@@ -841,7 +842,7 @@ img{
   .cta__container {
     background-color: #4a75f5;
     border-radius: 1.5rem;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -898,6 +899,22 @@ img{
   
   .button__icon {
     font-size: 1.25rem;
+  }
+  
+  /*==================== RESPONSIVE ====================*/
+  @media screen and (max-width: 768px) {
+    .cta__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .cta__img {
+      margin-top: 1.5rem;
+    }
+  
+    .cta__content {
+      text-align: center;
+    }
   }
 
 /*==================== CONTACT ME ====================*/
