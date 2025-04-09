@@ -833,32 +833,65 @@ img{
 }
 
 /*==================== PROJECT IN MIND ====================*/
-.project{
-    text-align: center;
+.project {
+  text-align: center;
 }
 
-.project__bg{
-    background-color: var(--first-color-second);
-    padding-top: 3rem;
+.project__bg {
+  background-color: var(--first-color-second);
+  padding: 3rem 1rem; /* Added side padding for small screens */
 }
 
-.project__title{
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-0-75);
+.project__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.project__description{
-    margin-bottom: var(--mb-1-5);
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+  color: #fff;
 }
 
-.project__title,
-.project__description{
-    color: #FFF;
+.project__description {
+  margin-bottom: var(--mb-1-5);
+  color: #fff;
 }
 
-.project__img{
-    width: 150px;
-    justify-self: left;
+.project__img {
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: var(--first-color-alt);
+  color: #fff;
+}
+
+/* Responsive for larger screens */
+@media screen and (min-width: 768px) {
+  .project__container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+
+  .project__img {
+    justify-self: center;
+    width: 180px;
+  }
+
+  .project__data {
+    text-align: left;
+  }
 }
 
 /*==================== CONTACT ME ====================*/
