@@ -835,13 +835,13 @@ img{
 /*==================== CTA SECTION ====================*/
 /*==================== CTA SECTION ====================*/
 .cta {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     background-color: #ffffff;
   }
   
   .cta__container {
     background-color: #4a75f5;
-    border-radius: 1.5rem;
+    border-radius: 5rem;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
